@@ -8,7 +8,7 @@ const io = socketIO(server);
 app.use(cors());
 io.on('connection', (socket) => {
   console.log('A user connected');
-app.get("/",(req,res)=>{
+app.get("/api",(req,res)=>{
 res.send({message:"Api Calls"})
 })
   // Handle client message event
